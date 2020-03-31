@@ -39,7 +39,7 @@ public class MyHBaseReader implements MyReader {
 	
 	public void open(String tableName) throws IOException {
 		this.config = HBaseConfiguration.create();
-		config.set("hbase.zookeeper.quorum","10.4.41.153");
+		config.set("hbase.zookeeper.quorum","host");
 		this.connection = ConnectionFactory.createConnection(config);
 		this.table = this.connection.getTable(TableName.valueOf(tableName));
 		

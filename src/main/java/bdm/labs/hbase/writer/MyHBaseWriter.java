@@ -39,7 +39,7 @@ public class MyHBaseWriter implements MyWriter {
         config.set("hbase.security.authentication", "simple");
         config.set("hbase.security.authorization","false");
         //config.set("hbase.zookeeper.quorum","magmar.fib.upc.es:2181");
-        config.set("hbase.zookeeper.quorum", "10.4.41.153");
+        config.set("hbase.zookeeper.quorum", "host");
         //config.set("hbase.zookeeper.property.clientPort", "2181");
 
         this.connection = ConnectionFactory.createConnection(this.config);
